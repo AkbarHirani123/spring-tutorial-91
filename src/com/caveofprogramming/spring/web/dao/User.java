@@ -9,17 +9,17 @@ import com.caveofprogramming.spring.web.validation.ValidEmail;
 
 public class User {
 
-	@NotBlank(message = "Username cannot be blank.")
-	@Size(min = 8, max = 20, message = "Username must be between 8 and 15 characters long.")
-	@Pattern(regexp = "^\\w{8,}$", message = "Username(Alphanumeric) can only consists of numbers, letter, and the underscore character.")
+	@NotBlank
+	@Size(min = 8, max = 20)
+	@Pattern(regexp = "^\\w{8,}$")
 	private String username;
 	
-	@NotBlank(message="Password cannot be blank.")
-	@Pattern(regexp="^\\S+$", message="Password can only have letters and numbers.")
-	@Size(min=6, max=20, message="Password must be between 6 and 15 characters long.")
+	@NotBlank
+	@Pattern(regexp="^\\S+$")
+	@Size(min=6, max=20)
 	private String password;
 	
-	@ValidEmail(message="This does not appear to be a valid email.")
+	@ValidEmail
 	private String email;
 	private boolean enabled = false;
 	private String authority;

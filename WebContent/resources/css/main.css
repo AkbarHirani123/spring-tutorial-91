@@ -1,7 +1,7 @@
 @CHARSET "US-ASCII";
 
 .formtable {
-	width: 500px;
+	width: 700px;
 	padding: 10px;
 	border: 1px solid blue;
 }
@@ -42,4 +42,10 @@ p.error {
 table.offers {
 	padding: 20px;
 	border: 1px solid gray;
+}
+
+.valid{
+	font-size: small;
+	color: green;
+	margin-left: 10px;
 }
