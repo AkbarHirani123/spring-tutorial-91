@@ -24,6 +24,10 @@
 				<td><input type='password' name='password' /></td>
 			</tr>
 			<tr>
+				<td>Remember me:</td>
+				<td><input type='checkbox' name='remember-me'/></td>
+			</tr>
+			<tr>
 				<td colspan='1'><input name="submit" type="submit"
 					value="Login" /></td>
 				<td><c:if test="${param.error != null}">
