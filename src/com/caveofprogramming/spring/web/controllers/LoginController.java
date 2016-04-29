@@ -66,7 +66,7 @@ public class LoginController {
 		}
 
 		user.setEnabled(true);
-		user.setAuthority("ROLE_USER");
+		user.setAuthority("user");
 
 		if (usersService.exists(user.getUsername())) {
 			result.rejectValue("username", "DuplicateKey.user.username");
